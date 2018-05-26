@@ -375,15 +375,15 @@ display1.innerHTML=info1.toString();
 
 //constructor(name:string,  city:string, address:string, plz:number, img:any,  eventdate:string, ticketprice:number, eventtime:string)
  
-var event1 = new events ("Kris Kristofferson", "Wien","Wiener Stadthalle", 1150, "imgs/event 01.jpg", "15.Jun" , "60", "20:00");
-var event2 = new events ("Lenny Kravitz", "Wien","Wiener Stadthalle", 1150, "imgs/event 02.jpg", "09.Jun" , "47,80", "19:30");
-var event3 = new events ("Brazil VS Austria", "Wien","Wiener Stadthalle", 1150, "imgs/event 03.png", "10.Jun" , "70", "16:00");
+let event1 = new events ("Kris Kristofferson", "Wien","Wiener Stadthalle", 1150, "imgs/event 01.jpg", "15.Jun" , "60", "20:00");
+let event2 = new events ("Lenny Kravitz", "Wien","Wiener Stadthalle", 1150, "imgs/event 02.jpg", "09.Jun" , "47,80", "19:30");
+let event3 = new events ("Brazil VS Austria", "Wien","Ernst-Happel-Stadion", 1020, "imgs/event 03.png", "10.Jun" , "70", "16:00");
 
 
 
 
 
-var arrey = [];
+var arrey = []; //array on screen
 arrey.push(atr1, atr2, atr3, rest1, rest2, rest3, event1, event2, event3);
 for(var i=0 ; i< arrey.length ; i++){
 	arrey[i].render();
